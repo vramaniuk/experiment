@@ -9,20 +9,25 @@
 </head>
 <body>
 <div id="maindiv">
-    <form action="" method="get" enctype="multipart/form-data" target="" autocomplete="on">
-        <label>Ваше имя:<input id='fdiv' type="text" name="name" placeholder="Ваня" required autofocus/></label><br/>
-        <label>Ваш пароль: <input type="password" name="psw6" placeholder="*********"/></label><br/>
-        <label>Ваш check1: <input type="checkbox" name="psw2"/></label><br/>
-        <label>Ваш check2: <input type="checkbox" name="psw3"/></label><br/>
-        <label>Ваш check3: <input type="checkbox" name="psw4"/></label><br/>
-        <label> Ваш check4: <input type="checkbox" name="psw5"/></label><br/>
+    <form name='val' action="" method="get" enctype="multipart/form-data" target="" autocomplete="on">
+        <fieldset>
+            <legend>Валидация</legend>
+            <br>
+            <label>Ваше имя:<input id='fdiv' type="text" name="name" placeholder="Ваня" required
+                                   autofocus/></label><br/>
+            <label>Ваш пароль: <input type="password" name="psw6" placeholder="*********"/></label><br/></fieldset>
+        <label>Ваш check1: <input type="checkbox" name="psw"/></label><br/>
+        <label>Ваш check2: <input type="checkbox" name="psw"/></label><br/>
+        <label>Ваш check3: <input type="checkbox" name="psw"/></label><br/>
+        <label> Ваш check4: <input type="checkbox" name="psw"/></label><br/>
         <label> Ваш rcheck1: <input type="radio" name="rw1"/></label><br/>
         <label> Ваш rcheck2: <input type="radio" name="rw1"/></label><br/>
         <label>Ваш rcheck3: <input type="radio" name="rw1"/></label><br/>
         <label> Ваш rcheck4: <input type="radio" name="rw1"/></label><br/>
         <label> Search: <input type="search" name="query"/></label><br/>
         <label> Телефон: <input type="tel" name="telephon" pattern="+7-[0-9]{3}-[0-9]{4}"/></label><br/>
-        <label>Курсы:<select>
+        <label> Кнопка: <input type="button" name="telhandler" value="Button"/></label><br/>
+        <label>Курсы:<select >
             <option>HTML</option>
             <option>CSS</option>
             <option>JavaScript</option>
@@ -30,7 +35,7 @@
             <option>PHP2 and MySQL</option>
         </select></label><br>
         Сообщение:<br>
-        <label><textarea rows="20" cols="50">
+        <label><textarea rows="30" cols="50">
     </textarea><br></label>
         <input type="reset"/>
         <input type="submit" name="go" title="Отправить на сервер" value="Отправить запрос"/> <br>
@@ -38,9 +43,9 @@
         <input type="file"/>
     </form>
 </div>
-<div id="div2">
+<div id="div2" contenteditable="true" spellcheck="true">
     <h3>Текст нового блока</h3>
-    <img class='ex1' src='http://www.wisdomweb.ru/editor/mountimg.jpg' alt='Закат в горах' />
+    <img class='ex1' src='http://www.wisdomweb.ru/editor/mountimg.jpg' alt='Закат в горах'/>
 </div>
 </body>
 </html>
