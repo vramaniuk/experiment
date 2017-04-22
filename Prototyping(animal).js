@@ -1,26 +1,26 @@
-
 class Animal {
     constructor(name) {
         this.me = name;
-
-    };
-   who()  {
-   return("I am " + this.me);}
-
-}
+        this.who=()=>
+             ("I am " + this.me);
+        }
+    }
 
 class Dog extends Animal {
-    constructor(name,character) {
+    constructor(name, character) {
         super(name);
-        this.character=character;
+        this.character = `I am ${character}`;
     }
 
     speak() {
         console.log("Hello, " + this.who() + ".");
     };
 }
-const fluffy = new Dog("Fluffy",'funny');
-const spot = new Dog("Spot",'agressive');
+const fluffy = new Dog("Fluffy", 'funny');
+const spot = new Dog("Spot", 'agressive');
+
 spot.speak();
-spot.who();
 console.log(spot.character);
+
+fluffy.speak();
+console.log(fluffy.character);
