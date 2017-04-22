@@ -1,2 +1,2 @@
 # experiment
-testin features
+testing features
