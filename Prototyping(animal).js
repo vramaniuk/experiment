@@ -50,5 +50,5 @@ class Dog extends Animal {
 }
 const fluffy = new Dog("Fluffy",'funny');
 const spot = new Dog("Spot",'agressive');
-spot.speak();
+fluffy.speak();
 console.log(fluffy.character);
