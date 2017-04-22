@@ -1,31 +1,3 @@
-/**
- * Created by VSKD on 21.04.2017.
- */
-/*function Animal(name) {
- this.me = name;
- }
- Animal.prototype.who = function () {
- return "I am " + this.me;
- };
- Animal.prototype.speak = function () {
- console.log("(Animal) speak!");
- };
-
- function Dog(name) {
- Animal.call(this, name);
- }
- Dog.prototype = Object.create(Animal.prototype);
- Dog.prototype.constructor = Dog;
-
-
- Dog.prototype.speak = function () {
- Animal.prototype.speak.call(this);
- console.log("Hello, " + this.who() + ".");
- };
-
- const fluffy = new Dog("Fluffy");
- const spot = new Dog("Spot");
- fluffy.speak();*/
 
 class Animal {
     constructor(name) {
