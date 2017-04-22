@@ -30,14 +30,12 @@
 class Animal {
     constructor(name) {
         this.me = name;
-        // this.who = function () {
-        //     return "I am " + this.me;
-        // }
+        this.who = function () {
+            return "I am " + this.me;
+        }
     };
 }
-Animal.prototype.who=function () {
-    return "I am " + this.me;
-};
+
 class Dog extends Animal {
     constructor(name,character) {
         super(name);
