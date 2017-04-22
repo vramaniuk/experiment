@@ -1,13 +1,21 @@
 /**
  * Created by VSKD on 28.03.2017.
  */
-function f(y) { return this.x + y; }
-const o = { x : 10 };
-const o2 = { x : 17 };
+function f(y) {
+    return this.x + y;
+}
+const o = {x: 10};
+const o2 = {x: 17};
 
-console.log(f.call(o,3));
-console.log(f.call(o2,9));
+let arr = [3];
+console.log(f.call(o, 3));
+console.log(f.apply(o2, arr));
 
 
 // const g = f.bind(o);
 // console.log(g(2));
+const mul = (a, b) => a * b;
+const square = (a) => mul(a, a);
+const printSquare = () => console.log(square(42));
+
+printSquare();
