@@ -5,7 +5,7 @@
 
 #maindiv {
     float: left;
-    margin: 0px;
+    margin: 0;
 
     width: auto;
     height: auto;
@@ -39,5 +39,9 @@ body {
     overflow: hidden;
     display: block;
 
+}
+
+#no {
+    visibility: hidden;
 }
 
