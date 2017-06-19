@@ -10,20 +10,18 @@ function Product(name, price, color) {
         throw RangeError('Нельзя создать продукт ' +
             this.name + ' с отрицательной ценой');
     }
-    this.sayName=()=>
-    {
-        console.log(this.name)
-    }
+    this.sayHi=()=>`Hi, I am ${this.name}`;
+return this;
 }
-// Product.prototype.sayName = function () {
-//     console.log(this.name)
-// }
+
+
 function Food(name, price, color) {
     Product.call(this, name, price, color);
     this.category = 'еда';
 }
 
-Food.prototype = Object.create(Product.prototype);
+// Food.prototype = Object.create(Product.prototype);
+// Food.prototype.constructor = Food;
 
 function Toy(name, price, color) {
     Product.call(this, name, price, color);
@@ -33,9 +31,10 @@ function Toy(name, price, color) {
 // Toy.prototype = Object.create(Product.prototype);
 
 var cheese = new Food('фета', 5, 'yellow');
-var fun = new Toy('робот', 40, 'red');
 
-console.log(cheese.sayName());
+// var fun = new Toy('робот', 40, 'red');
+
+console.log(cheese.sayHi());
 // console.log(fun.name);
 
 // class Product {
